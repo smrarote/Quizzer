@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <title>Quizzer</title>
+  </head>
+  <body>
+    <div class="row"> <h1 style="text-align: center;"> Add New Question To Dataset </h1> </div>
+    <form action="/contribute" method="POST">
+      <div class="form-group">
+          <label>Question:</label>
+          <input type="text" class="form-control" name="quetext" required>
+      </div>
+      <div class="form-group">
+          <label>A:</label>
+          <input type="text" class="form-control" name="option1" required>
+      </div>
+      <div class="form-group">
+          <label>B:</label>
+          <input type="text" class="form-control" name="option2" required>
+      </div>
+      <div class="form-group">
+          <label>C:</label>
+          <input type="text" class="form-control" name="option3" required>
+      </div>
+      <div class="form-group">
+          <label>D:</label>
+          <input type="text" class="form-control" name="option4" required>
+      </div>
+      <div style="text-align: center;">
+      <div class="form-group">
+          <label>Answer :</label>
+          <select name = "answer"  required>
+            <option value="" selected disabled hidden>
+                Select an Option
+            <option value= "A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+          </optgroup>
+          </select>
+      </div>
+      <br>
+      <button type="submit" class="btn btn-success">Add to Database</button>
+      </div>
+  </form>
+</html>
